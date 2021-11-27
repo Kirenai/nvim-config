@@ -1,0 +1,38 @@
+{
+  "json.enable": true,
+  "python.pythonPath": "C:\\Users\\Kire\\AppData\\Local\\Programs\\Python\\Python39",
+  "pyright.enable": true,
+  "java.home": "C:\\Program Files\\Java\\jdk-11.0.8",
+  "java.enabled": true,
+  "codeLens.enable": true,
+  "java.jdt.ls.vmargs": "-javaagent:D:\\devsetup\\.m2\\repository\\org\\projectlombok\\lombok\\1.18.20\\lombok-1.18.20.jar",
+  "java.configuration.maven.userSettings": "C:\\Users\\Kire\\.m2\\wrapper\\dists\\apache-maven-3.6.3-bin\\1iopthnavndlasol9gbrbg6bf2\\apache-maven-3.6.3\\conf\\settings.xml",
+  "java.referencesCodeLens.enabled": false,
+  "java.references.includeAccessors": false,
+  "java.implementationsCodeLens.enabled": true,
+  "java.completion.enabled": true,
+  "java.saveActions.organizeImports": true,
+  "java.format.enabled": true,
+  "java.trace.server": "off",
+  "java.import.gradle.enabled": true,
+  "tsserver.formatOnType": true,
+  "typescript.referencesCodeLens.enable": false,
+  "javascript.referencesCodeLens.enable": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "ts",
+    "tsx",
+    "css"
+  ],
+  "prettier.singleQuote": true,
+  "diagnostic.messageTarget": "float",
+  "prettier.eslintIntegration": false,
+  "prettier.disableLanguages": ["vue", "java"],
+  "snippets.extends": {
+    "typescript": ["javascript"]
+  },
+  "java.format.settings.url": "C:\\Users\\Kire\\AppData\\Local\\coc\\extensions\\node_modules\\redhat.java\\eclipse-formatter.xml",
+  "clangd.path": "~\\AppData\\Local\\coc\\extensions\\coc-clangd-data\\install\\13.0.0\\clangd_13.0.0\\bin\\clangd.exe"
+}
