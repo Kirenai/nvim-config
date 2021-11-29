@@ -9,7 +9,7 @@ endif
 " Specioy a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('$HOME/.vim/plugged')
+call plug#begin('~/AppData/Local/nvim/plugged')
     Plug 'morhetz/gruvbox'                              " Temas
     Plug 'easymotion/vim-easymotion'                    " Easymotion
     Plug 'preservim/nerdtree'                           " Nerdtree
