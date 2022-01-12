@@ -34,6 +34,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
     "Plug 'rodrigore/coc-tailwind-intellisense', {'do': 'npm install'}
     Plug 'joshdick/onedark.vim'				" One Dark Theme
     Plug 'ryanoasis/vim-devicons'                       " Require Caskadia Cove Nerd Font in nerdfonts.com
+    Plug 'preservim/nerdcommenter'                      " For commend lines
 call plug#end()
 
 " Commands
@@ -56,8 +57,8 @@ nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
 
 " Tab navigation like Firefox.
-nnoremap <A-h> :bprevious<CR>
-nnoremap <A-l>   :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+nnoremap <Tab> :bnext<CR>
 
 " NERDTree command
 nmap <C-n> :NERDTree<CR>
@@ -358,5 +359,7 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+"autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
 colorscheme gruvbox
