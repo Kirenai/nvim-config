@@ -1,10 +1,13 @@
 let mapleader = ","
-" Use <c-space> to trigger completion.
+"Use <c-space> to trigger completion.
 if has('nvim')
   inoremap <silent><expr> <c-s> coc#refresh()
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+let g:loaded_node_provider = 0
+let g:loaded_python3_provider = 0
 
 " Specioy a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
@@ -35,6 +38,7 @@ call plug#begin('~/AppData/Local/nvim/plugged')
     Plug 'joshdick/onedark.vim'				" One Dark Theme
     Plug 'ryanoasis/vim-devicons'                       " Require Caskadia Cove Nerd Font in nerdfonts.com
     Plug 'preservim/nerdcommenter'                      " For commend lines
+    Plug 'AndrewRadev/tagalong.vim'   			" Rename autotag
 call plug#end()
 
 " Commands
@@ -111,7 +115,7 @@ set omnifunc=syntaxcomplete#Complete
 "set pythonthreedll=$HOME\AppData\Local\Programs\Python\Python39\python39.dll
 
 "COC.VIM variables
-let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json']
+let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json' ]
 "GRUVBOX variables
 let g:gruvbox_contrast_dark = "hard"
 "NERDTree variables
@@ -225,7 +229,7 @@ set shortmess+=c
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
 if has("nvim-0.5.0") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
+  "" Recently vim can merge signcolumn and number column into one
   set signcolumn=number
 else
   set signcolumn=yes
@@ -248,7 +252,7 @@ endfunction
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+			      \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -286,9 +290,9 @@ nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
-  " Setup formatexpr specified filetype(s).
+  "" Setup formatexpr specified filetype(s).
   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder.
+  "" Update signature help on jump placeholder.
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
@@ -362,4 +366,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
-colorscheme gruvbox
+colorscheme onedark
