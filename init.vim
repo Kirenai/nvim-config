@@ -67,6 +67,7 @@ nnoremap <Tab> :bnext<CR>
 " NERDTree command
 nmap <C-n> :NERDTree<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
+nnoremap <A-1> :NERDTreeToggle<CR>
 
 " Command to find to characters
 nmap <Leader>s <Plug>(easymotion-s2)
