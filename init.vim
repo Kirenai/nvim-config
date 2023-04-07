@@ -13,7 +13,7 @@ let g:loaded_python3_provider = 0
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/AppData/Local/nvim/plugged')
-    Plug 'morhetz/gruvbox'                              " Temas
+    Plug 'morhetz/gruvbox'                              " Gruvbox theme
     Plug 'easymotion/vim-easymotion'                    " Easymotion
     Plug 'preservim/nerdtree'                           " Nerdtree
     Plug 'Xuyuanp/nerdtree-git-plugin'                  " Nerdtree git
@@ -116,7 +116,7 @@ set omnifunc=syntaxcomplete#Complete
 "set pythonthreedll=$HOME\AppData\Local\Programs\Python\Python39\python39.dll
 
 "COC.VIM variables
-let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json' ]
+"let g:coc_global_extensions = [ 'coc-tsserver', 'coc-json' ]
 "GRUVBOX variables
 let g:gruvbox_contrast_dark = "hard"
 "NERDTree variables
@@ -367,4 +367,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 "autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
-colorscheme onedark
+colorscheme gruvbox

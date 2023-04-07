@@ -22,5 +22,10 @@
   "snippets.extends": {
     "typescript": ["javascript"]
   },
-  "snippets.ultisnips.enable": false
+  "snippets.ultisnips.enable": false,
+  "diagnostic.enableMessage": "always",
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextPrefix": "<- "
 }
